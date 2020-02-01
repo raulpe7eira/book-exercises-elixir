@@ -19,4 +19,16 @@ defmodule WeatherTest do
 
     assert temperature == celsius_example
   end
+
+  test "should return temperature when take a valid location" do
+    temperature = Weather.temperature_of("Rio de Janeiro")
+
+    assert String.contains?(temperature, "Rio de Janeiro") == true
+  end
+
+  test "should return not found when take an invalid location" do
+    result = Weather.temperature_of("00000")
+
+    assert result == "00000 not found"
+  end
 end
