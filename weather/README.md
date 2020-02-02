@@ -9,6 +9,8 @@ mix deps.get
 iex -S mix
 ```
 
+> Type `iex.bat` in Windows.
+
 ```elixir
 iex> cities = ["Rio de Janeiro", "Sao Paulo", "Fortaleza"]
 
