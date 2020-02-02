@@ -1,8 +1,8 @@
-defmodule Weather.Task.App.Start do
+defmodule Weather.Task.AppStart do
   require Weather
 
   @moduledoc """
-  Documentation for `Weather App Start parellel (task version)`.
+  Documentation for `Weather AppStart parellel (task version)`.
   """
 
   @doc """
@@ -12,7 +12,7 @@ defmodule Weather.Task.App.Start do
 
       iex> cities = ["Rio de Janeiro", "Sao Paulo", "Fortaleza"]
       ["Rio de Janeiro", "Sao Paulo", "Fortaleza"]
-      iex> Weather.Task.App.Start.run cities
+      iex> Weather.Task.AppStart.run cities
       ["Rio de Janeiro: 25.7 °C", "Sao Paulo: 22.6 °C", "Fortaleza: 24.5 °C"]
 
   """

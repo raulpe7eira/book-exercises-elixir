@@ -1,8 +1,8 @@
-defmodule Weather.Spawn.App.Start do
+defmodule Weather.Spawn.AppStart do
   require Weather
 
   @moduledoc """
-  Documentation for `Weather App Start parellel (spawn version)`.
+  Documentation for `Weather AppStart parellel (spawn version)`.
   """
 
   @doc """
@@ -12,7 +12,7 @@ defmodule Weather.Spawn.App.Start do
 
       iex> cities = ["Rio de Janeiro", "Sao Paulo", "Fortaleza"]
       ["Rio de Janeiro", "Sao Paulo", "Fortaleza"]
-      iex> Weather.Spawn.App.Start.run cities
+      iex> Weather.Spawn.AppStart.run cities
       [{#PID<0.236.0>, "Rio de Janeiro"}, {#PID<0.236.0>, "Sao Paulo"}, {#PID<0.236.0>, "Fortaleza"}]
       iex> Fortaleza: 24.5 °C, Rio de Janeiro: 25.7 °C, Sao Paulo: 22.6 °C
 
